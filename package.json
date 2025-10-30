@@ -1,0 +1,24 @@
+{
+  "name": "cozymushroomhouse",
+  "version": "1.0.0",
+  "description": "This project is for the 20th challenge of ThreeJS with Bruno Simon.",
+  "main": "mushroomhouse.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alwin224/CozyMushroomHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alwin224/CozyMushroomHouse/issues"
+  },
+  "homepage": "https://github.com/Alwin224/CozyMushroomHouse#readme",
+  "dependencies": {
+    "vite": "^7.1.12"
+  }
+}
