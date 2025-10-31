@@ -1,7 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #FF77FF, #FFB347, #FFE873);
+    background: linear-gradient(to bottom, lightblue);
 }
 
 canvas.webgl {
