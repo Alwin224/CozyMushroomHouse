@@ -12,16 +12,20 @@
 </head>
 
 <body>
-
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informationmodal">
-        Info
-    </button>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="button" class="btn btn-success" style="background-color: darkslateblue" data-bs-toggle="modal" data-bs-target="#informationmodal">
+            Info
+        </button>
+        <button type="button" class="btn btn-success" style="background-color: darkslateblue;">
+            Sound
+        </button>
+    </div>
 
     <div class="modal fade" id="informationmodal" tabindex="-1" aria-labelledby="modallabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style = "background: #D6B588">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="informationmodallabel">020-Cozy-Place</h5>
+                    <h5 class="modal-title w-100 text-center" id="informationmodallabel" >020-Cozy-Place</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
