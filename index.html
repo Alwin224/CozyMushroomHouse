@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Cozy Mushroom</title>
 </head>
 
 <body>
-    <button onclick="document.getElementById('information').show()">Info</button>
-    <dialog id="information">
-        <button id="close" aria-label="close" onclick="document.getElementById('information').close()" style="float: right;">X</button>
-        <p class = "a">
-            Hey I am Alwin and welcome to my Cozy
-            Mushroom House that I made for Bruno Simon's
-            20th ThreeJS Challenge titled Cozy Place. This
-            is my first ever completed and uploaded project
-            and I had a blast doing it. I hope to make more
-            in the future.
-        </p>
-    </dialog>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informationmodal">
+        Info
+    </button>
+
+    <div class="modal fade" id="informationmodal" tabindex="-1" aria-labelledby="modallabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="informationmodallabel">020-Cozy-Place</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="a">
+                        Hey I am Alwin and welcome to my Cozy
+                        Mushroom House that I made for Bruno Simon's
+                        20th ThreeJS Challenge titled Cozy Place. This
+                        is my first ever completed and uploaded project
+                        and I had a blast doing it. I hope to make more
+                        in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
