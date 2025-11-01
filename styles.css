@@ -6,7 +6,6 @@ body {
 
 canvas.webgl {
     display: block;
-
 }
 
 html,
@@ -24,4 +23,102 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#buttonWrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.fixedButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, darkslateblue, rebeccapurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.fixedButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fixedButton svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 10000;
+}
+
+#loaderContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#loaderContainer p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#loaderContainer button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: darkslateblue;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#loaderContainer button:hover {
+    transform: scale(1.05);
+}
+
+#enterbutton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+#enterbutton:hover {
+    transform: scale(1.1);
+}
+
+
+#enterbutton img {
+    width: 50px;
+    height: 50px;
+
 }
