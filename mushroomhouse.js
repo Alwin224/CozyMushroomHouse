@@ -3,7 +3,6 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { gsap } from 'gsap';
-import { sRGBEncoding } from 'three';
 
 
 const loadingScreen = document.getElementById('loadingScreen');
