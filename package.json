@@ -4,9 +4,8 @@
   "description": "",
   "main": "mushroomhouse.js",
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
