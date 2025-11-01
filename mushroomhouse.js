@@ -68,7 +68,7 @@ controls.maxPolarAngle = Math.PI / 2;
 
 //renderer
 const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
-renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.outputEncoding = 3001; //sRGBEncoding
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
