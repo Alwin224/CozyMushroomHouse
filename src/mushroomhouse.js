@@ -74,7 +74,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 //loaders
 const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath('/static/');
+dracoLoader.setDecoderPath('/');
 
 const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
@@ -83,7 +83,7 @@ let modelLoaded = false;
 
 //loading the gltf model from blender
 gltfLoader.load(
-    '/static/CozyMushroomHouse.glb',
+    '/CozyMushroomHouse.glb',
     (gltf) => {
         const model = gltf.scene;
         scene.add(model);
