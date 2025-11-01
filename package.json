@@ -5,7 +5,8 @@
   "main": "mushroomhouse.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "npx vite build",
+    "deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "homepage": "https://github.com/Alwin224/CozyMushroomHouse#readme",
   "dependencies": {
     "gsap": "^3.13.0",
-    "three": "^0.181.0",
+    "three": "^0.181.0"
+  },
+  "devDependencies": {
     "vite": "^7.1.12"
   }
 }
